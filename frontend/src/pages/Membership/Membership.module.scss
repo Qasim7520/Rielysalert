@@ -1,0 +1,71 @@
+@use "../../scss/colors";
+
+.container {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+}
+.headingFlex{
+  display:flex ;
+  // justify-content: center;
+}
+
+.heading {
+  color: colors.$black;
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: normal;
+}
+.statusSubheading {
+  display: flex;
+  color: green;
+  font-family: Poppins;
+  font-size: 25px;
+  padding-top: 3px;
+  padding-left: 10px;
+  font-weight: 400;
+  line-height: normal;
+}
+.subHeading{
+  color: colors.$black;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.faqsContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.messageUsContainer {
+  width: 100%;
+  padding: 10px 14px 22px 14px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #e8e8e8;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.headline {
+  color: colors.$black;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.text {
+  color: colors.$black;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

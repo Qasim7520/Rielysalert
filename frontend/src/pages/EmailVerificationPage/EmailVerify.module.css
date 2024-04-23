@@ -1,0 +1,32 @@
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.link {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+
+.joinNowBtn {
+  color: #fff75e;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 13px 0px;
+  border-radius: 10px;
+  border: 2px solid #fff75e;
+  width: 100%;
+  background-color: transparent;
+  cursor: pointer;
+}/*# sourceMappingURL=EmailVerify.module.css.map */

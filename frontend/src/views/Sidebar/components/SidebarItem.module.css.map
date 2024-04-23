@@ -1,0 +1,1 @@
+{"version":3,"sources":["SidebarItem.module.scss","../../../scss/_colors.scss","SidebarItem.module.css"],"names":[],"mappings":"AAEA;EACE,WAAA;EACA,0BAAA;EACA,kBAAA;EACA,sBAAA;EACA,6BAAA;EACA,WCRM;EDSN,oBAAA;EACA,eAAA;EACA,kBAAA;EACA,gBAAA;EACA,mBAAA;EACA,qBAAA;AEDF;AFGE;EAEE,wEAAA;EACA,WClBI;ACgBR","file":"SidebarItem.module.css"}

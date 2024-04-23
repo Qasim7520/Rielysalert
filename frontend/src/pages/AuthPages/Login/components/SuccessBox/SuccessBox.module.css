@@ -1,0 +1,51 @@
+.pageContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.pageContainer .formContainer {
+  width: 70%;
+  height: auto;
+  border-radius: 10px;
+  color: #fff;
+  padding: 30px;
+  margin: 90px 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.pageContainer .heading {
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.pageContainer .text {
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media only screen and (max-width: 500px) {
+  br {
+    display: none !important;
+  }
+  .heading {
+    font-size: 26px !important;
+  }
+  .text {
+    font-size: 16px !important;
+  }
+}/*# sourceMappingURL=SuccessBox.module.css.map */

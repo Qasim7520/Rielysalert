@@ -1,0 +1,50 @@
+@use "../../../scss/colors";
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  margin: 0;
+  position: absolute;
+}
+
+.label {
+  height: 14px;
+  min-width: 14px;
+  border: 1px solid colors.$black;
+  background: transparent;
+  color: colors.$black;
+  border-radius: 2px;
+  font-size: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.labeledtext {
+  color: colors.$black;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 10px;
+}
+
+
+
+
+@media only screen and (max-width: 350px) {
+  .labeledtext {
+    font-size: 9px;
+  }
+  
+  }

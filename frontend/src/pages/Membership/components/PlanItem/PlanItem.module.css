@@ -1,0 +1,204 @@
+.container {
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid #7d7d7d;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.container .isPopularText {
+  top: -18px;
+  position: absolute;
+  border-radius: 5px;
+  background: #14ae5c;
+  padding: 5px 39px;
+  color: #ffffff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.container.isPopular {
+  border: 1px solid #FFF75E;
+  background-color: #FFF75E;
+}
+.container .featureName {
+  color: #000;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  text-transform: uppercase;
+}
+.container .price {
+  color: #000;
+  font-family: Poppins;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 250;
+  line-height: normal;
+}
+.container .price span {
+  font-size: 36px;
+}
+.container .price.isPopular {
+  font-weight: 600;
+}
+.container .price.isPopular span {
+  font-weight: 600;
+}
+.container .perMonth {
+  color: #000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.container button {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #000;
+  padding: 10px 0;
+  color: #000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.container button.isPopular {
+  color: #fff;
+  background-color: #000;
+}
+.container .searchesADay {
+  color: #000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.container:hover {
+  background-color: #FFF75E;
+}
+.container:hover button {
+  background-color: #000;
+  color: #fff;
+}
+.container:hover .price {
+  color: #000;
+  font-family: Poppins;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 250;
+  line-height: normal;
+  font-weight: 600;
+}
+.container:hover .price span {
+  font-size: 36px;
+}
+.container:hover .price span {
+  font-weight: 600;
+}
+
+.productcontainer {
+  display: flex;
+  height: 60px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  flex-direction: row;
+  cursor: pointer;
+  padding: 10px;
+  border: 3px solid #FFF75E;
+  border-radius: 10px;
+  align-self: center;
+  background-color: white;
+}
+
+.productcontainer:hover {
+  background-color: #fff75e;
+  border: 1px solid #fff75e;
+}
+
+.yellowbackground {
+  background-color: #FFF75E;
+  border: 1px solid #FFF75E;
+}
+
+.bestdeal {
+  position: absolute;
+  width: 50px;
+  height: 15px;
+  margin-left: 440px;
+  margin-bottom: 90px;
+  background-color: #0C9B00;
+  font-family: Poppins;
+  font-weight: 400;
+  color: white;
+  padding: 5px 10px; /* Adjust padding as needed */
+  border-radius: 8px; /* Match the border radius of your product-container */
+  font-size: 10px; /* Adjust font size as needed */
+}
+
+.productcontainerdetail {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 60%;
+  /* background-color: green; */
+  /* padding-left: 10px; */
+}
+
+.productcontainerdetail2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 60%;
+}
+
+.productcontainerdetail3 {
+  display: flex;
+}
+
+.packageName {
+  color: #221F1F;
+  font-family: Poppins;
+  font-size: 20.5px;
+  font-weight: 400;
+}
+
+.creditsDetail {
+  color: #221F1F;
+  font-family: Poppins;
+  font-size: 20.5px;
+  font-weight: 400;
+}
+
+.packagePrice {
+  color: #221F1F;
+  font-family: Poppins;
+  font-size: 21px;
+  font-weight: 600;
+}/*# sourceMappingURL=PlanItem.module.css.map */

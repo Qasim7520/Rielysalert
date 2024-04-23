@@ -1,0 +1,41 @@
+.layoutContainer {
+  width: 100%;
+  height: calc(100% - 70px);
+  padding-top: 70px;
+  position: relative;
+}
+
+.loggedInLayoutContainer {
+  width: 100%;
+  height: calc(100vh - 70px);
+  padding-top: 89px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+}
+.loggedInLayoutContainer .contentContainer {
+  width: calc(100% - 227px);
+  margin-left: 224px;
+  height: auto;
+  background: linear-gradient(to bottom, rgb(248, 29, 30), rgb(170, 5, 6));
+  overflow-y: auto;
+  position: inherit;
+  padding: 24px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.loggedInLayoutContainer .contentContainer .container {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 32px;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 768px) {
+  .contentContainer {
+    width: auto !important;
+    margin-left: auto !important;
+  }
+}/*# sourceMappingURL=Layout.module.css.map */

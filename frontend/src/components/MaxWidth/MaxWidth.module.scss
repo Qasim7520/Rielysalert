@@ -1,0 +1,11 @@
+@use "../../scss/variables";
+
+.container {
+    width: 100%;
+    max-width: variables.$maxwidth;
+    margin: 0 30px;
+}
+
+.fullHeight {
+    height: 100%;
+}

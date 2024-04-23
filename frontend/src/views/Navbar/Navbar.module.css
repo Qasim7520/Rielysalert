@@ -1,0 +1,177 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(236, 236, 236);
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.navbar .container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .container .logoContainer {
+  max-width: 150px;
+}
+.navbar .container .logoContainer .logo {
+  max-width: 150px;
+  height: 100%;
+}
+.navbar .container .navItemsContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+}
+.navbar .container .navItemsContainer .navItem {
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.navbar .container .navItemsContainer .selected {
+  color: rgb(170, 5, 6);
+}
+.navbar .container .navItemsContainer button {
+  background-color: #FFF75E;
+  border-radius: 5px;
+  border: none;
+  padding: 9px 16px;
+  color: #000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.NavToggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+}
+.NavToggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(0, 0, 0); /* Changed to white */
+  margin: 3px 0;
+}
+.NavToggle .NavToggle svg {
+  width: 25px;
+  height: 25px;
+}
+
+@media only screen and (max-width: 868px) {
+  .navItemsContainer {
+    gap: 15px !important;
+  }
+  .navItemsContainer button {
+    font-size: 14px !important;
+  }
+  .navItemsContainer .navItem {
+    font-size: 14px !important;
+  }
+}
+.mobilehide {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+}
+
+.additionalNavItems {
+  display: none !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .mobilehide {
+    display: none !important;
+  }
+  .additionalNavItems {
+    display: flex !important;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 0 20px;
+  }
+  .navItemsContainer {
+    display: none !important;
+  }
+  .navItemsContainer.active {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important; /* Align items vertically */
+    position: absolute;
+    top: 100% !important; /* Position below the navbar */
+    left: 0 !important;
+    width: 100%;
+    background-color: rgb(236, 236, 236);
+    padding: 10px !important; /* Add padding */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) !important; /* Add box shadow */
+    height: 100vh;
+    clip: rect(0, 0, auto, 0);
+    animation: slide 0.3s linear 0.3s forwards;
+    z-index: 1000 !important;
+  }
+  .loggedIn {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important; /* Align items vertically */
+    position: absolute;
+    top: 100% !important; /* Position below the navbar */
+    left: 0 !important;
+    width: 100%;
+    background-color: #fff !important; /* Adjust background color */
+    padding: 10px !important; /* Add padding */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) !important; /* Add box shadow */
+    height: 100vh;
+    clip: rect(0, 0, auto, 0);
+    animation: slide 0.3s linear 0.3s forwards;
+  }
+  .navItemsContainer.active .additionalNavItems {
+    margin-left: -10px !important;
+    background: rgb(255, 255, 255) !important;
+    height: 100vh;
+  }
+  .additionalNavItems .navItem {
+    color: #000 !important;
+    margin-top: 15px;
+    text-align: left !important;
+    width: 900px;
+    height: 30px;
+  }
+  @keyframes slide {
+    100% {
+      clip: rect(0, 100vw, auto, 0);
+    }
+  }
+  .NavToggle {
+    display: flex !important; /* Display the toggle button */
+  }
+  .navbtn {
+    margin-left: 10px;
+  }
+  .navItem {
+    padding-left: 25px;
+    padding-top: 5px;
+  }
+}/*# sourceMappingURL=Navbar.module.css.map */

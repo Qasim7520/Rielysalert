@@ -1,0 +1,230 @@
+@use "../../../../scss/colors";
+
+.container {
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid #7d7d7d;
+  background-color: colors.$white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  .isPopularText {
+    top: -18px;
+    position: absolute;
+    border-radius: 5px;
+    background: #14ae5c;
+    padding: 5px 39px;
+    color: #ffffff;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  &.isPopular {
+    border: 1px solid colors.$yellow;
+    background-color: colors.$yellow;
+  }
+
+  .featureName {
+    color: colors.$black;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    text-transform: uppercase;
+  }
+
+  .price {
+    color: colors.$black;
+    font-family: Poppins;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 250;
+    line-height: normal;
+
+    span {
+      font-size: 36px;
+    }
+
+    &.isPopular {
+      font-weight: 600;
+
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+
+  .perMonth {
+    color: colors.$black;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  button {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid colors.$black;
+    padding: 10px 0;
+    color: colors.$black;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    &.isPopular {
+      color: colors.$white;
+      background-color: colors.$black;
+    }
+  }
+
+  .searchesADay {
+    color: colors.$black;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+.container:hover {
+  background-color: colors.$yellow;
+
+  button {
+    background-color: colors.$black;
+    color: colors.$white;
+  }
+
+  .price {
+    color: colors.$black;
+    font-family: Poppins;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 250;
+    line-height: normal;
+
+    span {
+      font-size: 36px;
+    }
+
+    font-weight: 600;
+
+    span {
+      font-weight: 600;
+    }
+  }
+}
+
+
+
+
+.productcontainer {
+  display: flex;
+  height: 230px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  align-self: center;
+  background-color: white;
+}
+
+.productcontainer:hover {
+  background-color: #fff75e;
+  border: 1px solid #fff75e;
+}
+.yellowbackground {
+  background-color: #FFF75E;
+  border: 1px solid #FFF75E;
+}
+
+.bestdeal {
+  position: absolute;
+  width: 80px;
+  height: 23px;
+  margin-left: 440px;
+  margin-bottom: 90px;
+  background-color: #0C9B00;
+  font-family: Poppins;
+  font-weight: 400;
+  color: white;
+  padding: 5px 10px; /* Adjust padding as needed */
+  border-radius: 8px; /* Match the border radius of your product-container */
+  font-size: 10px; /* Adjust font size as needed */
+}
+
+.productcontainerdetail {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 60%;
+  /* background-color: green; */
+  /* padding-left: 10px; */
+}
+.productcontainerdetail2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 60%;
+}
+.productcontainerdetail3 {
+  display: flex;
+}
+
+
+.packageName{
+  color: #221F1F;
+font-family: Poppins;
+font-size: 20.5px;
+font-weight: 400;
+}
+
+.creditsDetail{
+  color: #221F1F;
+font-family: Poppins;
+font-size: 30.5px;
+padding-top: 20px;
+font-weight: 700;
+}
+.creditsDetail2{
+  color: #221F1F;
+font-family: Poppins;
+font-size: 30.5px;
+font-weight: 700;
+}
+
+.packagePrice{
+  color: #221F1F;
+font-family: Poppins;
+font-size: 26px;
+font-weight: 400;
+}

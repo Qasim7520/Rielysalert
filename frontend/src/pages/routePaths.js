@@ -1,0 +1,22 @@
+export const RoutePaths = {
+  Root: "/",
+  Login: "/login",
+  Signup: "/signup",
+  Pricing: "/pricing",
+  Profile: "/profile",
+  Billing: "/billing",
+  Referrals: "/referrals",
+  Support: "/support",
+  Onboard: "/onboard",
+  PaymentSuccess: "/PaymentSuccess/success",
+  EmailVerify: "/verifyEmail",
+  PostPayment: "/post-payment",
+  EmailSuccess: "/email-success",
+  Privacy: "/privacy-policy",
+  HowToUse: "/how-to-use",
+  Terms: "/terms-condition",
+  ResetPassword: "reset-password",
+  Join: "/join",
+  SuccessBox: "/success_box",
+  Membership: "/membership"
+};

@@ -1,0 +1,111 @@
+@use "../../../../scss/colors";
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .heading {
+    color: colors.$black;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .heading1{
+    color: #221F1F;
+font-family: Poppins;
+font-size: 20.5px;
+font-weight: 600;
+  }
+  .subText{
+    color: #000;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  }
+
+  .subHeading {
+    color: colors.$black;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .pricingContainer {
+    width: 100%;
+    display: flex;
+    // flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.headingDiv {
+  width:100%;
+  display:flex;
+  justify-content:space-between
+}
+.heading2 {
+  font-family: Poppins;
+  padding-top: 8px;
+  font-size: 14px;
+}
+.heading3 {
+  font-family: Poppins;
+  padding-top: 8px;
+  font-size: 12px;
+}
+
+@media (max-width: 468px)  {
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  
+    .heading {
+      color: colors.$black;
+      font-family: Poppins;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+    .heading1{
+      color: #221F1F;
+  font-family: Poppins;
+  font-size: 20.5px;
+  font-weight: 600;
+    }
+    .subText{
+      color: #000;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+    }
+  
+    .subHeading {
+      color: colors.$black;
+      font-family: Poppins;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  
+    .pricingContainer {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+}

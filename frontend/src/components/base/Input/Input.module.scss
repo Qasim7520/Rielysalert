@@ -1,0 +1,82 @@
+@use "../../../scss/colors";
+
+.container {
+  width: 100%;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  flex: 1;
+  background-color: colors.$white;
+
+  &.error {
+    border-color: colors.$red;
+  }
+
+  &:not(.disabled, .focused):hover {
+    &.error {
+      border-color: colors.$red;
+    }
+  }
+
+  &.focused {
+    // border-color: colors.$yellow;
+
+    &.light {
+      background-color: colors.$white;
+    }
+  }
+}
+
+.input {
+  outline: none;
+  width: 100%;
+  padding: 15px 25px;
+  border: none;
+  background: none;
+  color: rgba(0, 0, 0, 0.5);
+  caret-color: rgba(0, 0, 0, 0.5);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+
+  // &:not(.disabled).password {
+  //   width: calc(100% - 22px);
+  // }
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  &.disabled {
+    pointer-events: none;
+    color: colors.$grey-400;
+  }
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus {
+    -webkit-text-fill-color: rgba(0, 0, 0, 0.5);
+    transition: background-color 5000s ease-in-out 0s;
+    background-color: transparent;
+  }
+}
+
+
+.input {
+  border: 0.5px solid rgba(0, 0, 0, 1) !important;
+  border-radius: 10px !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .input {
+    border: 1px solid rgba(0, 0, 0, 1) !important;
+    border-radius: 10px !important;
+  }
+  
+  .focused {
+    border-color: colors.$white !important;
+  }
+  }
+

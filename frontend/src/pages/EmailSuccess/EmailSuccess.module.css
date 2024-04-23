@@ -1,0 +1,103 @@
+.pageContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.pageContainer .formContainer {
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
+  color: white;
+  padding: 10px;
+  margin: 10px 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.pageContainer .formContainer .heading {
+  color: #221F1F;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 29px;
+  font-weight: 600;
+}
+.pageContainer .formContainer .heading span {
+  color: yellow;
+}
+.pageContainer .formContainer .fieldItem {
+  width: 100%;
+  height: auto;
+}
+.pageContainer .formContainer .authButton {
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  padding: 15px 0;
+  background-color: yellow;
+  color: black;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.pageContainer .formContainer .bottomText {
+  color: white;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.pageContainer .formContainer .bottomText span {
+  color: yellow;
+}
+.pageContainer .formContainer .bottomText .link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.subHeading {
+  color: #000;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+.subHeading span {
+  color: #000;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 768px) {
+  .subHeading {
+    text-align: center;
+  }
+  br {
+    display: none !important;
+  }
+  .heading {
+    font-size: 25px !important;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .formContainer {
+    margin-top: -100px !important;
+  }
+  .heading {
+    font-size: 22px !important;
+  }
+}/*# sourceMappingURL=EmailSuccess.module.css.map */

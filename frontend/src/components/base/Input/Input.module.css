@@ -1,0 +1,63 @@
+.container {
+  width: 100%;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  flex: 1;
+  background-color: #fff;
+}
+.container.error {
+  border-color: #ff5454;
+}
+.container:not(.disabled, .focused):hover.error {
+  border-color: #ff5454;
+}
+.container.focused.light {
+  background-color: #fff;
+}
+
+.input {
+  outline: none;
+  width: 100%;
+  padding: 15px 25px;
+  border: none;
+  background: none;
+  color: rgba(0, 0, 0, 0.5);
+  caret-color: rgba(0, 0, 0, 0.5);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+.input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+.input.disabled {
+  pointer-events: none;
+  color: #8b8ba0;
+}
+.input:-webkit-autofill, .input:-webkit-autofill:hover, .input:-webkit-autofill:focus {
+  -webkit-text-fill-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+  background-color: transparent;
+}
+
+.input {
+  border: 0.5px solid rgb(0, 0, 0) !important;
+  border-radius: 10px !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .input {
+    border: 1px solid rgb(0, 0, 0) !important;
+    border-radius: 10px !important;
+  }
+  .focused {
+    border-color: #fff !important;
+  }
+}/*# sourceMappingURL=Input.module.css.map */

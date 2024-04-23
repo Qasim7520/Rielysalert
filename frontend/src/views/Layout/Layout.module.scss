@@ -1,0 +1,53 @@
+@use "../../scss/variables";
+@use "../../scss/colors";
+
+.layoutContainer {
+  width: 100%;
+  height: calc(100% - variables.$navbar);
+  padding-top: variables.$navbar;
+  position: relative;
+}
+
+.loggedInLayoutContainer {
+  width: 100%;
+  height: calc(100vh - variables.$navbar);
+  padding-top: variables.$navbar + 19px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+
+  .contentContainer {
+    width: calc(100% - variables.$sidebar-width);
+     margin-left: 224px;
+    height: auto;
+    //background-color: colors.$yellow;
+    background: linear-gradient(to bottom, rgb(248, 29, 30), rgb(170, 5, 6));
+    overflow-y: auto;
+    position: inherit;
+    padding: 24px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    
+
+    .container {
+      background-color: colors.$white;
+      border-radius: 5px;
+      padding: 32px;
+      box-sizing: border-box;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  
+  
+  
+    .contentContainer {
+     width:auto !important;
+     margin-left: auto !important;
+    
+  }
+  }
+

@@ -1,0 +1,58 @@
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.modalPageContainer {
+  position: absolute;
+  z-index: 10000;
+}
+
+.modalContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  animation: fadeIn 0.2s ease-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalPanel {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: #F9F9F9;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  max-width: calc(100vw - 93px - 30px);
+}
+.card.isPadding {
+  padding: 16px 20px;
+}
+.card.sm {
+  width: 464px;
+}
+.card.md {
+  width: 650px;
+}
+.card.lg {
+  width: 940px;
+}
+.card.xl {
+  width: 1008px;
+}/*# sourceMappingURL=Modal.module.css.map */
